@@ -40,3 +40,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+# Guney's additions:
+remote-profile/
+.vscode/
+log.txt
+C:\\nppdf32Log\\debuglog.txt

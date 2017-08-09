@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+   selector: 'my-app',
+   template: `<h3>MY Items</h3><ul><li *ngFor="let item of items">{{ item }}</li></ul>`
 })
 export class AppComponent {
-  title = 'app';
-}
+  items:Array<string>;
+
+  constructor() {
+    this.items = ['test','execute','refactor'];
+  }
+
+  add(item) {
+    this.items.push(item);
+  }
+};
