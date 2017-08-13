@@ -16,6 +16,13 @@ exports.config = {
     'browserName': 'chrome'
   }]*/
 
+  // see below link for geckoDriver
+  // https://github.com/angular/protractor/blob/master/lib/config.ts
+  // after following:
+  // npm install geckodriver --save-dev
+  // set geckDriver like below:
+  geckoDriver: "/home/guney/Desktop/tdd/tdd-chp6/node_modules/geckodriver/bin/geckodriver",
+
   capabilities: {
     'browserName': 'firefox'
     // phantomjs use is STRONGLY DISCOURAGED - read online.
